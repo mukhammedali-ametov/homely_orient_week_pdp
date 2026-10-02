@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Buyurtma — Homely</title>
+  <meta name="theme-color" content="#F6EFE6">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,520;9..144,650&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="order">
+  <div id="site-header"></div>
+  <main id="main" class="narrow page">
+    <p class="eyebrow">Buyurtma</p>
+    <h1 class="page-title">Yaqiningizga mehr yuboring</h1>
+    <p class="lede">Manzil, sana, xabar va to'lov. Qolganini Homely qiladi.</p>
+    <div id="who"></div>
+    <ol class="progress" id="progress"></ol>
+    <form id="order-form">
+      <section data-step="1" class="panel">
+        <h2>Quti va manzil</h2>
+        <label class="field">Quti
+          <select id="box-id"></select>
+        </label>
+        <div id="box-mini"></div>
+        <label class="field">Qabul qiluvchi
+          <input id="recipient" autocomplete="name" placeholder="Masalan: Sardor Karimov">
+        </label>
+        <button class="text-btn" id="fill-sardor" type="button">Sardor uchun to'ldirish</button>
+        <div id="city-list" class="choice-grid"></div>
+        <div id="custom-wrap" hidden>
+          <label class="field">Nima topshirasiz?
+            <textarea id="custom-note" rows="3" placeholder="Masalan: uy quritgan o'rik va novvot"></textarea>
+          </label>
+        </div>
+      </section>
+
+      <section data-step="2" class="panel" hidden>
+        <h2>Jo'natish sanasi</h2>
+        <p class="hint">Moskva yo'nalishi har juma kuni jo'natiladi.</p>
+        <div id="date-list" class="choice-grid"></div>
+      </section>
+
+      <section data-step="3" class="panel" hidden>
+        <h2>Mehr qo'shing</h2>
+        <p class="hint">Farzand qutini ochishdan oldin shu xabarni ko'radi.</p>
+        <label class="field">Xabar
+          <textarea id="message" rows="5" placeholder="O'g'lim, seni sog'indik..."></textarea>
+        </label>
+        <button class="text-btn" id="fill-message" type="button">Namuna xabar</button>
+        <div class="file-row">
+          <label class="file-btn">Rasm yuklash
+            <input id="photo" type="file" accept="image/*" hidden>
+          </label>
+          <button class="btn btn-ghost" id="rec-btn" type="button">Ovoz yozish</button>
+          <span id="rec-state" class="hint"></span>
+        </div>
+        <img id="photo-preview" alt="Yuklangan rasm" hidden>
+        <audio id="audio-preview" controls hidden></audio>
+      </section>
+
+      <section data-step="4" class="panel" hidden>
+        <h2>To'lov</h2>
+        <div id="pay-summary" class="summary"></div>
+        <div class="form-grid">
+          <label class="field">Yuboruvchi ismi
+            <input id="sender-name" autocomplete="name">
+          </label>
+          <label class="field">Telefon
+            <input id="sender-phone" autocomplete="tel" placeholder="+998 90 555 12 34">
+          </label>
+        </div>
+        <label class="field">Qaysi shahardan
+          <select id="sender-city"></select>
+        </label>
+        <h3>Karta</h3>
+        <button class="text-btn" id="fill-card" type="button">Tez to'ldirish</button>
+        <label class="field">Karta egasi
+          <input id="card-name" autocomplete="cc-name">
+        </label>
+        <label class="field">Karta raqami
+          <input id="card-number" inputmode="numeric" autocomplete="cc-number" placeholder="8600 0000 0000 0000">
+        </label>
+        <div class="form-grid">
+          <label class="field">Muddat
+            <input id="card-expiry" inputmode="numeric" autocomplete="cc-exp" placeholder="MM/YY">
+          </label>
+          <label class="field">CVV
+            <input id="card-cvv" inputmode="numeric" autocomplete="cc-csc" maxlength="3" placeholder="123">
+          </label>
+        </div>
+        <p class="hint">Namoyish to'lovi. Pul yechilmaydi. Kartaning o'zi saqlanmaydi, faqat oxirgi 4 raqam qoladi.</p>
+      </section>
+      <p id="form-error" class="form-error" role="alert"></p>
+      <div class="wizard-nav" id="wizard-nav">
+        <button class="btn btn-ghost" id="back-btn" type="button" hidden>Ortga</button>
+        <button class="btn btn-primary" id="next-btn" type="button">Keyingi</button>
+        <button class="btn btn-primary" id="pay-btn" type="submit" hidden>To'lash</button>
+      </div>
+    </form>
+    <section id="done" class="panel" hidden></section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/qrcode.js" defer></script>
+  <script src="js/api.js" defer></script>
+  <script src="js/ui.js" defer></script>
+  <script src="js/app.js" defer></script>
+</body>
+</html>

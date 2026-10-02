@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ro'yxat — Homely</title>
+  <meta name="theme-color" content="#F6EFE6">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,520;9..144,650&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="register">
+  <div id="site-header"></div>
+  <main id="main" class="narrow page">
+    <p class="eyebrow">Ro'yxat</p>
+    <h1 class="page-title">Yangi hisob</h1>
+    <form id="register-form" class="panel">
+      <label class="field">Ism familiya
+        <input id="r-name" autocomplete="name" required>
+      </label>
+      <label class="field">Telefon
+        <input id="r-phone" autocomplete="tel" placeholder="+998 90 000 00 00" required>
+      </label>
+      <label class="field">Shahar
+        <select id="r-city">
+          <option>Samarqand</option>
+          <option>Toshkent</option>
+          <option>Andijon</option>
+          <option>Farg'ona</option>
+          <option>Namangan</option>
+          <option>Buxoro</option>
+          <option>Xorazm</option>
+          <option>Navoiy</option>
+          <option>Qarshi</option>
+          <option>Nukus</option>
+        </select>
+      </label>
+      <label class="field">Login
+        <input id="r-login" autocomplete="username" required>
+      </label>
+      <div class="form-grid">
+        <label class="field">Parol
+          <input id="r-password" type="password" autocomplete="new-password" required>
+        </label>
+        <label class="field">Parolni takrorlang
+          <input id="r-password2" type="password" autocomplete="new-password" required>
+        </label>
+      </div>
+      <p id="register-error" class="form-error" role="alert"></p>
+      <button class="btn btn-primary" type="submit">Ro'yxatdan o'tish</button>
+      <p>Hisob bor? <a href="kirish.html">Kirish</a></p>
+    </form>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/qrcode.js" defer></script>
+  <script src="js/api.js" defer></script>
+  <script src="js/ui.js" defer></script>
+  <script src="js/app.js" defer></script>
+</body>
+</html>

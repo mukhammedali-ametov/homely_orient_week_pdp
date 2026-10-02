@@ -1,0 +1,185 @@
+{
+  "users": [
+    {
+      "id": "u-zulfiya",
+      "name": "Zulfiya Karimova",
+      "phone": "+998 90 555 12 34",
+      "city": "Samarqand",
+      "login": "zulfiya",
+      "password": "mehr2026",
+      "role": "user"
+    },
+    {
+      "id": "u-admin",
+      "name": "Homely Admin",
+      "phone": "+998 71 200 00 00",
+      "city": "Toshkent",
+      "login": "admin",
+      "password": "homely2026",
+      "role": "admin"
+    }
+  ],
+  "sessions": {
+    "706dc0c8c8b8115b373056d8ed459505": {
+      "userId": "u-admin",
+      "at": "2026-10-02T05:40:24Z"
+    }
+  },
+  "orders": [
+    {
+      "id": "o-10428",
+      "number": "HM-10428",
+      "userId": "u-zulfiya",
+      "boxId": "standart",
+      "boxName": "Standart quti",
+      "boxPrice": 350000,
+      "senderName": "Zulfiya Karimova",
+      "senderPhone": "+998 90 555 12 34",
+      "senderCity": "Samarqand",
+      "recipientName": "Sardor Karimov",
+      "country": "Rossiya",
+      "city": "Moskva",
+      "routeId": "moskva",
+      "shipDate": "2026-10-09",
+      "deliveryDays": "7–10 kun",
+      "messageText": "O'g'lim, seni sog'indik. Bu mayizni o'zimiz tayyorladik. Choy damlab, bizni esla.",
+      "messagePhoto": null,
+      "messageAudio": null,
+      "customNote": null,
+      "deliveryPrice": 85000,
+      "total": 435000,
+      "cardLast4": "9012",
+      "cardName": "ZULFIYA KARIMOVA",
+      "status": "jonatildi",
+      "token": "mehr1042",
+      "replyText": null,
+      "replyPhoto": null,
+      "replyAt": null,
+      "createdAt": "2026-09-26T05:40:24Z",
+      "history": [
+        {
+          "status": "qabul",
+          "at": "2026-09-26T05:40:24Z"
+        },
+        {
+          "status": "qadoq",
+          "at": "2026-09-27T05:40:24Z"
+        },
+        {
+          "status": "jonatildi",
+          "at": "2026-09-29T05:40:24Z"
+        }
+      ]
+    },
+    {
+      "id": "o-10411",
+      "number": "HM-10411",
+      "userId": null,
+      "boxId": "bayram",
+      "boxName": "Bayram qutisi",
+      "boxPrice": 420000,
+      "senderName": "Dilnoza Rasulova",
+      "senderPhone": "+998 91 222 18 40",
+      "senderCity": "Andijon",
+      "recipientName": "Jasur Rasulov",
+      "country": "Rossiya",
+      "city": "Sankt-Peterburg",
+      "routeId": "piter",
+      "shipDate": "2026-10-09",
+      "deliveryDays": "8–12 kun",
+      "messageText": "Jasurjon, hayiting muborak bo'lsin. Uydagilar sog'inadi.",
+      "messagePhoto": null,
+      "messageAudio": null,
+      "customNote": null,
+      "deliveryPrice": 95000,
+      "total": 515000,
+      "cardLast4": "4410",
+      "cardName": "DILNOZA RASULOVA",
+      "status": "qadoq",
+      "token": "bayram771",
+      "replyText": null,
+      "replyPhoto": null,
+      "replyAt": null,
+      "createdAt": "2026-09-30T05:40:24Z",
+      "history": [
+        {
+          "status": "qabul",
+          "at": "2026-09-30T05:40:24Z"
+        },
+        {
+          "status": "qadoq",
+          "at": "2026-10-01T05:40:24Z"
+        }
+      ]
+    },
+    {
+      "id": "o-10390",
+      "number": "HM-10390",
+      "userId": null,
+      "boxId": "premium",
+      "boxName": "Premium quti",
+      "boxPrice": 480000,
+      "senderName": "Malika Tursunova",
+      "senderPhone": "+998 97 410 77 21",
+      "senderCity": "Toshkent",
+      "recipientName": "Akmal Tursunov",
+      "country": "Janubiy Koreya",
+      "city": "Seul",
+      "routeId": "seul",
+      "shipDate": "2026-09-20",
+      "deliveryDays": "10–16 kun",
+      "messageText": "Akmaljon, Seulda ham uy choyini ich. Sog'inamiz.",
+      "messagePhoto": null,
+      "messageAudio": null,
+      "customNote": null,
+      "deliveryPrice": 160000,
+      "total": 640000,
+      "cardLast4": "2281",
+      "cardName": "MALIKA TURSUNOVA",
+      "status": "yetib",
+      "token": "seul2201",
+      "replyText": "Onajon, quti yetib keldi. Choy judayam totli, sog'indim.",
+      "replyPhoto": null,
+      "replyAt": "2026-10-01T05:40:24Z",
+      "createdAt": "2026-09-14T05:40:24Z",
+      "history": [
+        {
+          "status": "qabul",
+          "at": "2026-09-14T05:40:24Z"
+        },
+        {
+          "status": "qadoq",
+          "at": "2026-09-15T05:40:24Z"
+        },
+        {
+          "status": "jonatildi",
+          "at": "2026-09-18T05:40:24Z"
+        },
+        {
+          "status": "yetib",
+          "at": "2026-10-01T05:40:24Z"
+        }
+      ]
+    }
+  ],
+  "contacts": [
+    {
+      "id": "c-1",
+      "name": "Nodira Yusupova",
+      "phone": "+998 93 777 45 10",
+      "message": "Assalomu alaykum. Onam o'g'liga Moskvaga quti yubormoqchi. Qancha kunda yetadi?",
+      "at": "2026-10-01T05:40:24Z",
+      "read": false
+    }
+  ],
+  "notifications": [
+    {
+      "id": "n-1",
+      "userId": "u-zulfiya",
+      "text": "Sardorning qutisi yo'lga chiqdi. Holat: Jo'natildi.",
+      "at": "2026-09-29T05:40:24Z",
+      "read": true
+    }
+  ],
+  "seq": 10500
+}

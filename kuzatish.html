@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kuzatish — Homely</title>
+  <meta name="theme-color" content="#F6EFE6">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,520;9..144,650&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="track">
+  <div id="site-header"></div>
+  <main id="main" class="narrow page">
+    <p class="eyebrow">Kuzatish</p>
+    <h1 class="page-title">Posilka qayerda?</h1>
+    <p class="lede">Buyurtma raqamini yozing. Holat: qabul qilindi, qadoqlandi, jo'natildi, yetib bordi.</p>
+    <form id="track-form" class="track-form">
+      <input id="track-number" aria-label="Buyurtma raqami" placeholder="HM-10428" autocomplete="off">
+      <button class="btn btn-primary" type="submit">Ko'rish</button>
+    </form>
+    <p class="hint">Namuna: HM-10428. Shaxsiy xabar faqat QR havolada ochiladi, bu yerda ko'rinmaydi.</p>
+    <div id="track-result"></div>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/qrcode.js" defer></script>
+  <script src="js/api.js" defer></script>
+  <script src="js/ui.js" defer></script>
+  <script src="js/app.js" defer></script>
+</body>
+</html>
